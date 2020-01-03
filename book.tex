@@ -50,6 +50,17 @@
 \usepackage{hyperref}
 \usepackage{harvard}
 \usepackage{marginnote}
+\usepackage[capitalize, noabbrev]{cleveref} % Used to improve refernces
+
+\let\comment=\relax
+\usepackage[markup=bfit, deletedmarkup=sout, authormarkup=superscript]{changes}
+\definechangesauthor[name={ar}, color=teal]{AR}
+\definechangesauthor[name={nc}, color=ForestGreen]{NC}
+\definechangesauthor[name={td}, color= red]{TODO}
+
+\newcommand{\ar}[1]{\added[id=AR  ]{#1}}
+\newcommand{\nc}[1]{\added[id=NC  ]{#1}}
+\newcommand{\td}[1]{\added[id=TODO]{#1}}
 
 \usepackage{makeidx}
 \usepackage{idxlayout}
@@ -137,20 +148,20 @@ Nikolaus Correll\\
 Boulder, Colorado, \today
 \end{flushright}
 
-\input{chapters/introduction}
-\input{chapters/locomotion}
+% \input{chapters/introduction}
+% \input{chapters/locomotion}
 \input{chapters/forwardkinematics1}
 \input{chapters/inversekinematics}
 \input{chapters/forwardkinematics3}
-%\input{chapters/forces} % Alessandro's chapter
-\input{chapters/pathplanning}
-\input{chapters/taskexecution}
-\input{chapters/sensors}
-\input{chapters/vision}
-\input{chapters/features}
-\input{chapters/errorpropagation}
-\input{chapters/localization}
-\input{chapters/grasping}
+\input{chapters/forces} % Alessandro's chapter
+% \input{chapters/pathplanning}
+% \input{chapters/taskexecution}
+% \input{chapters/sensors}
+% \input{chapters/vision}
+% \input{chapters/features}
+% \input{chapters/errorpropagation}
+% \input{chapters/localization}
+% \input{chapters/grasping}
 
 
 
