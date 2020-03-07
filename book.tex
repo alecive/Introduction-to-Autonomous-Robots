@@ -153,6 +153,7 @@ Boulder, Colorado, \today
 \input{chapters/forwardkinematics1}
 \input{chapters/inversekinematics}
 \input{chapters/forwardkinematics3}
+<<<<<<< HEAD
 \input{chapters/forces} % Alessandro's chapter
 % \input{chapters/pathplanning}
 % \input{chapters/taskexecution}
@@ -259,6 +260,21 @@ This can be addressed by constructing a  minimum spanning-tree  (MST) of the con
 
 \item G. Grisetti, C. Stachniss, S. Grzonka and W. Burgard. A Tree Parameterization for Efficiently Computing Maximum Likelihood Maps using Gradient Descent. Robotics: Science and Systems (RSS), Atlanta, GA, USA, 2007.
 \end{itemize}
+=======
+%\input{chapters/forces} % Alessandro's chapter
+\input{chapters/pathplanning}
+\input{chapters/taskexecution}
+\input{chapters/sensors}
+\input{chapters/vision}
+\input{chapters/features}
+\input{chapters/errorpropagation}
+\input{chapters/localization}
+\input{chapters/grasping}
+\input{chapters/SLAM}
+
+
+
+>>>>>>> typos fixed
 
 \chapter{RGB-D SLAM}
  Range sensors have emerged as one of the most effective sensors to make robots autonomous. Unlike vision, range data makes the construction of a 3D model of the robot's environment straightforward and the Velodyne sensor, that combines 64 scanning lasers into one package, was key in mastering the DARPA Grand Challenge.  3D range data has become even more important in robotics with the advent of cheap (priced at a tenth than the cheapest 2D laser scanner) RGB-D (color image plus depth) cameras. Point cloud data allows fitting of lines using RANSAC, which can serve as features in EKF-based localization, but can also be used for improving odometry, loop-closure detection, and mapping. The goals of this chapter are
