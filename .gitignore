@@ -9,6 +9,8 @@
 *.out
 *.synctex.gz
 *.toc
+*.loc
+*.soc
 
 # ignore the final documents
 *.pdf
